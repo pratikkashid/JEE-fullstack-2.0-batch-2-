@@ -1,0 +1,28 @@
+package com.cg.demo;
+
+import java.util.Scanner;
+
+public class Sumofsquare {
+	private static Scanner sc;
+	public static void main(String[] args) {
+		 sc = new Scanner(System.in);
+		 int sum=0,i,sum1=0,sumsq;
+		 System.out.println("enter the value of number");
+		 int n = sc.nextInt();
+		 for(i=1;i<=n;i++)
+		 {
+			 sum=i*i+sum;
+			 sum1=i+sum1 ;
+		 }
+		 
+		 sumsq=sum1*sum1;
+		 if(sum>sumcub) {
+		 System.out.println(sum-sumsq);
+		 }
+		 else {
+			 System.out.println(sumsq-sum);
+		 }
+		
+	}
+
+}
