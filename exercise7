@@ -1,0 +1,37 @@
+package com.cg.practice;
+
+import java.util.Scanner;
+
+public class Lab1exercise7 {
+	public static boolean checknumber(int num) {
+		
+		boolean flag=false;
+		int currentnum = num%10;
+	    num = num/10;
+		while(num>0) {
+			if(currentnum>num%10) {
+				//System.out.println("number is in increasing order");
+				flag= true;
+				currentnum=num%10;
+				//int temp = num1/10;
+				num= num/10;
+			} 
+			}
+		return flag;	
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the number");
+		int num = sc.nextInt();
+		boolean flag = checknumber(num);
+		
+		if (flag) {
+			System.out.println("number in increasing");
+		}
+		else {System.out.println("number is not increasing");
+		}
+	
+	}
+}
